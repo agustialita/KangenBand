@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins" />
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(238, 208, 153);
+        }
+
+        header {
+            background-color: orange;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            display: flex;
+        }
+
+        header img {
+            width: 200px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        header ul li a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+        }
+
+        header ul li a::before {
+            content: " ";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: black;
+            transition: 0.3s;
+        }
+
+        header ul li a:hover::before {
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orange;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            padding: 80px 10;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: orange;
+            border: 1px solid orange;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .product h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .product button {
+            background-color: #333;
+            border: none;
+            color: red;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <p>KANGEN BAND</p>
+        <nav class="list">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="dropdown">
+                    <div class="dropbtn">ABOUT</div>
+                    <div class="dropdown-content">
+                        <a href="biography.html">BIOGRAPHIES</a>
+                        <a href="picture.html">PICTURES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropbtn">DISCOGRAPHY</div>
+                    <div class="dropdown-content">
+                        <a href="track.html">SAMPLE TRACKES</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="store.html">STORE</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>STORE</h1>
+        <img src="images/Line 1.png" alt="" />
+
+        <section class="products">
+            <div class="product">
+                <img src="https://laz-img-sg.alicdn.com/p/bb874bef6b5c0e0ec8515342d742dc61.jpg" alt="" />
+                <h3>Baju Kaos</h3>
+                <p>30.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://images.tokopedia.net/img/cache/500-square/hDjmkQ/2022/5/10/a8b641ee-f65a-493a-8026-a077b856074e.jpg"
+                    alt="" />
+                <h3>Jaket</h3>
+                <p>45.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSad22puHuOxt_dXWR0kvkiJJ-A9zhoc6Y2Jg&usqp=CAU"
+                    alt="" />
+                <h3>Topi</h3>
+                <p>25.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.gadis.co.id/bucket-gadis-production/wysywig-contents/1645338048.png" alt="" />
+                <h3>Jam</h3>
+                <p>20.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://down-id.img.susercontent.com/file/id-11134201-7qul6-ljgt3q7r31if98" alt="" />
+                <h3>Sweater</h3>
+                <p>35.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://down-id.img.susercontent.com/file/69c723e903cf534ff98cf51aa4f41393" alt="" />
+                <h3>Baju Kaos</h3>
+                <p>20.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://awsimages.detik.net.id/customthumb/2013/11/20/852/gelangdlm.jpg?w=600&q=90" alt="" />
+                <h3>Gelang</h3>
+                <p>10.000</p>
+                <p>Beli</p>
+            </div>
+
+            <div class="product">
+                <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/10/20/6a029b7e-b176-4dd0-8286-f1e420a2b432.jpg"
+                    alt="" />
+                <h3>Baju Kaos</h3>
+                <p>30,000</p>
+                <p>Beli</p>
+            </div>
+
+        </section>
+</body>
+
+</html>
